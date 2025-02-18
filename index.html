@@ -3,35 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RGV Solutions - Embedded & IoT</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>RGV Solutions - Embedded & IoT Experts</title>
+    <meta name="description" content="RGV Solutions specializes in Embedded Systems and IoT projects. Contact us for innovative project development.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #121212;
+            color: white;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(45deg, #0073e6, #00c6ff);
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            padding: 50px 20px;
+        }
+        .animated-text {
+            font-size: 26px;
+            color: #00c6ff;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { opacity: 0.5; }
+            to { opacity: 1; }
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .service-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 0 0 15px rgba(0, 198, 255, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-box:hover {
+            transform: scale(1.1);
+        }
+        .footer {
+            background: #0073e6;
+            color: white;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+        .floating-icons {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 80px;
+            color: rgba(0, 198, 255, 0.2);
+            animation: float 5s infinite linear;
+        }
+        @keyframes float {
+            0% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(20px); }
+            100% { transform: translateX(-50%) translateY(0); }
+        }
+    </style>
 </head>
 <body>
-
-    <div class="navbar">
-        <div class="logo"><strong>RGV Solutions</strong></div>
-        <div>
-            <a href="#">Home</a>
-            <a href="#">Expertise</a>
-            <a href="#">Solutions</a>
-            <a href="#">Contact</a>
+    <header>RGV Solutions - Embedded & IoT Experts</header>
+    <div class="floating-icons">🔧💡🔌</div>
+    <div class="container">
+        <h2>Welcome to RGV Solutions</h2>
+        <p class="animated-text">Innovating the Future with Embedded Systems & IoT</p>
+        <div class="services">
+            <div class="service-box">
+                <h3>Embedded Systems</h3>
+                <p>Expert solutions for microcontrollers, firmware, and real-time applications.</p>
+            </div>
+            <div class="service-box">
+                <h3>IoT Solutions</h3>
+                <p>Connecting devices for smarter and automated solutions.</p>
+            </div>
         </div>
+        <h3>About Us</h3>
+        <p>RGV Solutions is founded by <strong>TRIO</strong> - Chandan, Chethan, and Dhushyanth. We specialize in delivering top-tier Embedded and IoT solutions.</p>
     </div>
-
-    <div class="content">
-        <h1>🚀 Leading Innovation in <span class="highlight">Embedded & IoT</span></h1>
-        <p>Experts in Arduino, ESP32, STM32, Bluetooth, WiFi, Zigbee</p>
-    
-        <div class="images">
-            <img src="images/bluetooth.png" alt="Bluetooth">
-            <img src="images/wifi.png" alt="WiFi">
-            <img src="images/zigbee.png" alt="Zigbee">
-        </div>
-    </div>
-
-    <div class="footer">
-        💡 Found by <strong>Trio</strong> | Excellence in Embedded & IoT
-    </div>
-
+    <div class="footer">&copy; 2025 RGV Solutions | Built by TRIO</div>
 </body>
 </html>
