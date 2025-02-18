@@ -6,31 +6,74 @@
     <title>RGV Solutions - Embedded & IoT Experts</title>
     <meta name="description" content="RGV Solutions specializes in Embedded Systems and IoT projects. Contact us for innovative project development.">
     <style>
-        /* Animation for Moving Text */
-        @keyframes moveText {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #f4f4f4;
         }
-
-        .animated-text {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 100%;
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 20px;
             font-size: 24px;
             font-weight: bold;
-            color: blue;
-            white-space: nowrap;
-            animation: moveText 5s linear infinite;
+        }
+        .container {
+            padding: 20px;
+        }
+        .animated-text {
+            font-size: 22px;
+            color: #0073e6;
+            animation: fadeIn 3s infinite alternate;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0.3; }
+            to { opacity: 1; }
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .service-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background: #0073e6;
+            color: white;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to RGV Solutions</h1>
-    <p>RGV Solutions specializes in Embedded Systems and IoT projects.</p>
-
-    <!-- Animated Text -->
-    <div class="animated-text">🚀 RGV Solutions - Embedded & IoT Experts! 🌍</div>
+    <header>RGV Solutions - Embedded & IoT Experts</header>
+    <div class="container">
+        <h2>Welcome to RGV Solutions</h2>
+        <p class="animated-text">Empowering Innovation in Embedded Systems & IoT</p>
+        <div class="services">
+            <div class="service-box">
+                <h3>Embedded Systems</h3>
+                <p>Expert solutions for microcontrollers, firmware, and real-time applications.</p>
+            </div>
+            <div class="service-box">
+                <h3>IoT Solutions</h3>
+                <p>Connecting devices for smarter and automated solutions.</p>
+            </div>
+        </div>
+        <h3>About Us</h3>
+        <p>RGV Solutions is founded by <strong>TRIO</strong> - Chandan, Chethan, and Dhushyanth. We specialize in delivering top-tier Embedded and IoT solutions.</p>
+    </div>
+    <div class="footer">&copy; 2025 RGV Solutions | Built by TRIO</div>
 </body>
 </html>
 
